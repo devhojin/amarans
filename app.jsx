@@ -429,7 +429,7 @@ function Contact() {
         setStatus('error');
       }
     } catch (err) {
-      setErrMsg('네트워크 오류가 발생했습니다. 이메일(sales@amarans.co.kr)로 직접 연락주세요.');
+      setErrMsg('네트워크 오류가 발생했습니다. 이메일(korea@amarans.co.kr)로 직접 연락주세요.');
       setStatus('error');
     }
   };
@@ -447,7 +447,7 @@ function Contact() {
         <div className="ct">
           <aside className="ct-aside">
             <div className="ct-head">프로젝트를 <em>함께 설계</em>할 준비가 되어 있습니다.</div>
-            <a href="mailto:sales@amarans.co.kr" className="ct-email">sales@amarans.co.kr</a>
+            <a href="mailto:korea@amarans.co.kr" className="ct-email">korea@amarans.co.kr</a>
             <div className="ct-meta">
               <div className="ct-meta-row"><span className="mono">PHONE</span><span>010-9940-7909</span></div>
               <div className="ct-meta-row"><span className="mono">HQ</span><span>경기도 광명시 소하로 190, 광명G타워 12층</span></div>
@@ -466,7 +466,7 @@ function Contact() {
                 </svg>
               </div>
               <h3 className="ct-success-h">문의가 정상 접수되었습니다.</h3>
-              <p className="ct-success-p">담당 파트너가 24시간 내 <strong>sales@amarans.co.kr</strong>에서 직접 회신드립니다.<br/>급한 건은 <strong>010-9940-7909</strong>로 전화 주셔도 좋습니다.</p>
+              <p className="ct-success-p">담당 파트너가 24시간 내 <strong>korea@amarans.co.kr</strong>에서 직접 회신드립니다.<br/>급한 건은 <strong>010-9940-7909</strong>로 전화 주셔도 좋습니다.</p>
               <button className="btn btn-ghost" onClick={() => setStatus('idle')}>새 문의 작성</button>
             </div>
           ) : (
@@ -563,7 +563,7 @@ function Footer() {
           </div>
           <div className="foot-col">
             <span className="mono">CONTACT</span>
-            <a href="mailto:sales@amarans.co.kr">sales@amarans.co.kr</a>
+            <a href="mailto:korea@amarans.co.kr">korea@amarans.co.kr</a>
             <a href="tel:01099407909">010-9940-7909</a>
             <span>경기도 광명시 소하로 190, 광명G타워 12층</span>
           </div>
@@ -648,8 +648,8 @@ const LEGAL_CONTENT = {
       { h: '제2조 (수집하는 개인정보의 항목 및 수집 방법)', p: '회사는 다음의 항목을 수집합니다.\n\n- 필수항목: 이름, 이메일, 연락처, 소속(기관/회사)\n- 선택항목: 직책, 프로젝트 개요, 예산 규모\n- 자동수집: 접속 IP, 쿠키, 방문 일시, 서비스 이용 기록\n\n수집 방법: 홈페이지 Contact 폼, 이메일, 전화, 서면 계약서 등' },
       { h: '제3조 (개인정보의 보유 및 이용 기간)', p: '회사는 원칙적으로 개인정보 수집 및 이용 목적이 달성된 후 지체 없이 파기합니다. 단, 관련 법령에 의해 보존 의무가 있는 경우 해당 기간 동안 보관합니다.\n\n- 계약 및 청약철회 기록: 5년 (전자상거래법)\n- 대금결제 및 재화공급 기록: 5년\n- 소비자 불만·분쟁 처리 기록: 3년\n- 문의·상담 기록: 3년' },
       { h: '제4조 (개인정보의 제3자 제공)', p: '회사는 정보주체의 개인정보를 제1조에서 명시한 범위 내에서만 처리하며, 정보주체의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.' },
-      { h: '제5조 (정보주체의 권리·의무 및 행사 방법)', p: '정보주체는 언제든지 다음과 같은 권리를 행사할 수 있습니다.\n\n1. 개인정보 열람 요구\n2. 오류 등이 있을 경우 정정 요구\n3. 삭제 요구\n4. 처리 정지 요구\n\n권리 행사는 sales@amarans.co.kr 또는 010-9940-7909를 통해 요청하실 수 있으며, 회사는 지체 없이 조치하겠습니다.' },
-      { h: '제6조 (개인정보 보호책임자)', p: '회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.\n\n- 성명: 개인정보보호 책임자\n- 연락처: 010-9940-7909\n- 이메일: sales@amarans.co.kr' },
+      { h: '제5조 (정보주체의 권리·의무 및 행사 방법)', p: '정보주체는 언제든지 다음과 같은 권리를 행사할 수 있습니다.\n\n1. 개인정보 열람 요구\n2. 오류 등이 있을 경우 정정 요구\n3. 삭제 요구\n4. 처리 정지 요구\n\n권리 행사는 korea@amarans.co.kr 또는 010-9940-7909를 통해 요청하실 수 있으며, 회사는 지체 없이 조치하겠습니다.' },
+      { h: '제6조 (개인정보 보호책임자)', p: '회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.\n\n- 성명: 개인정보보호 책임자\n- 연락처: 010-9940-7909\n- 이메일: korea@amarans.co.kr' },
       { h: '제7조 (개인정보의 안전성 확보 조치)', p: '회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.\n\n1. 관리적 조치: 내부관리계획 수립·시행, 정기적 직원 교육\n2. 기술적 조치: 접근권한 관리, 접근통제시스템 설치, 고유식별정보 암호화, 보안프로그램 설치\n3. 물리적 조치: 전산실 및 자료보관실의 접근통제' },
       { h: '제8조 (고지의 의무)', p: '본 개인정보처리방침은 관련 법령 및 회사 내부 정책에 따라 변경될 수 있으며, 변경 시에는 변경사항의 시행 7일 전부터 홈페이지를 통해 고지합니다.' },
     ],
@@ -676,7 +676,7 @@ const LEGAL_CONTENT = {
     updated: '사업자등록증 기준',
     sections: [
       { h: '회사 정보', p: '상호: 주식회사 아마란스 (AMARANS CO., LTD.)\n대표자: Roy. Chae\n소재지: 경기도 광명시 소하로 190, 광명G타워 12층\n사업자등록번호: 682-53-00808\n통신판매업 신고번호: 제2023-수원권선-0773호\n설립: 2023년' },
-      { h: '연락처', p: '대표번호: 010-9940-7909\n이메일: sales@amarans.co.kr\n운영시간: 평일 10:00 – 19:00 (KST)\n휴무: 주말 및 법정공휴일' },
+      { h: '연락처', p: '대표번호: 010-9940-7909\n이메일: korea@amarans.co.kr\n운영시간: 평일 10:00 – 19:00 (KST)\n휴무: 주말 및 법정공휴일' },
       { h: '주요 사업영역', p: '- 공공·B2B 제안 전략 컨설팅\n- 사업 기획 및 신사업 설계\n- AI·클라우드·데이터 기술 자문\n- PMO 및 프로젝트 수행 지원\n- 정책·시장·기술 리서치' },
     ],
   },
@@ -717,7 +717,7 @@ function LegalModal({ kind, onClose }) {
             </div>
           ))}
           <div className="lm-foot mono dim">
-            문의: sales@amarans.co.kr · 010-9940-7909
+            문의: korea@amarans.co.kr · 010-9940-7909
           </div>
         </div>
       </div>
