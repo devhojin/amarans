@@ -10,11 +10,11 @@ function Nav() {
           <span>AMARANS<span className="brand-sub"> · 아마란스</span></span>
         </a>
         <div className="nav-links">
-          <a href="#services">Services</a>
-          <a href="#process">Process</a>
-          <a href="#care">Care</a>
-          <a href="#team">Team</a>
-          <a href="#archive">Archive</a>
+          <a href="#services">서비스</a>
+          <a href="#process">업무 프로세스</a>
+          <a href="#care">케어 서비스</a>
+          <a href="#team">팀.아마란스</a>
+          <a href="#archive">실적</a>
           <a href="#faq">FAQ</a>
         </div>
         <a href="#contact" className="nav-cta">
@@ -275,7 +275,7 @@ function Team() {
       <div className="page">
         <div className="sec-head">
           <div className="sec-head-left">
-            <div className="sec-kicker mono"><span className="dot"></span>TEAM / 04</div>
+            <div className="sec-kicker mono"><span className="dot"></span>TEAM.AMARANS · 팀.아마란스 / 04</div>
             <h2 className="sec-title">현장에서 검증된<br/><span className="low">여섯 명의 설계자.</span></h2>
           </div>
           <p className="sec-desc">대형 SI·컨설팅·정책기관 출신. 자문이 아닌 실전 경험에서 만들어진 팀입니다.</p>
@@ -302,12 +302,11 @@ function Team() {
 
 // ============ ARCHIVE ============
 const ARC = [
-  { n: '001', cat: 'Public', t: '국가 AI 인프라 구축 기획', d: '부처급 AI 파운데이션 구축 사업 제안·수행. 기술평가 1위.', s: '₩320억' },
-  { n: '002', cat: 'Defense', t: '차세대 군 지휘통제 시스템', d: '방사청 주관 지휘통제 플랫폼 제안 설계. 수주 확정.', s: '₩180억' },
-  { n: '003', cat: 'Smart City', t: '광역시 스마트시티 통합관제', d: '도시데이터 허브 + 디지털트윈 통합 제안.', s: '₩95억' },
-  { n: '004', cat: 'Finance', t: '금융권 AI 리스크 플랫폼', d: '시중은행 AI 기반 신용·시장 리스크 플랫폼 구축 자문.', s: '₩64억' },
-  { n: '005', cat: 'R&D', t: '국가전략기술 R&D 사업', d: '양자·AI 융합 대형 R&D 과제 기획 및 선정.', s: '₩48억' },
-  { n: '006', cat: 'Public', t: '보건의료 데이터 플랫폼', d: '의료 마이데이터 플랫폼 구축 사업 제안.', s: '₩52억' },
+  { n: '001', cat: 'Defense', t: '차세대 군 지휘통제 시스템', d: '방사청 주관 지휘통제 플랫폼 제안 설계. 수주 확정.', s: '₩180억' },
+  { n: '002', cat: 'Smart City', t: '광역시 스마트시티 통합관제', d: '도시데이터 허브 + 디지털트윈 통합 제안.', s: '₩95억' },
+  { n: '003', cat: 'Finance', t: '금융권 AI 리스크 플랫폼', d: '시중은행 AI 기반 신용·시장 리스크 플랫폼 구축 자문.', s: '₩64억' },
+  { n: '004', cat: 'R&D', t: '국가전략기술 R&D 사업', d: '양자·AI 융합 대형 R&D 과제 기획 및 선정.', s: '₩48억' },
+  { n: '005', cat: 'Public', t: '보건의료 데이터 플랫폼', d: '의료 마이데이터 플랫폼 구축 사업 제안.', s: '₩52억' },
 ];
 
 function Archive() {
@@ -552,10 +551,12 @@ function Footer() {
           </div>
           <div className="foot-col">
             <span className="mono">SITEMAP</span>
-            <a href="#services">Services</a>
-            <a href="#process">Process</a>
-            <a href="#care">Care</a>
-            <a href="#team">Team</a>
+            <a href="#services">서비스</a>
+            <a href="#process">업무 프로세스</a>
+            <a href="#care">케어 서비스</a>
+            <a href="#team">팀.아마란스</a>
+            <a href="#archive">실적</a>
+            <a href="#faq">FAQ</a>
           </div>
           <div className="foot-col">
             <span className="mono">CONTACT</span>
