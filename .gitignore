@@ -1,0 +1,27 @@
+# 원본 압축 파일 (로컬 백업용)
+amarans.zip
+unzipped/
+
+# macOS
+.DS_Store
+._*
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 로그
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 환경 변수
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
