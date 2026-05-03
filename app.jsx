@@ -11,6 +11,7 @@ function Nav() {
         </a>
         <div className="nav-links">
           <a href="#services">서비스</a>
+          <a href="#search-pages">검색 페이지</a>
           <a href="#process">업무 프로세스</a>
           <a href="#care">케어 서비스</a>
           <a href="#team">팀.아마란스</a>
@@ -108,6 +109,17 @@ const SERVICES = [
   { n: '06', t: 'Research & Insight', d: '시장·정책·경쟁 리서치. 이기는 각도를 발굴하는 근거 기반 인사이트.', tags: ['Policy','Market','Benchmark'], ico: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4" stroke="currentColor" strokeWidth="1.5"/><path d="M10 10l3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg> },
 ];
 
+const SEO_INTENTS = [
+  { href: '/public-procurement-proposal', title: '공공입찰 제안서', desc: '공공기관 평가표와 RFP 기준으로 제안서 구조를 설계합니다.' },
+  { href: '/g2b-proposal-consulting', title: '나라장터 제안서', desc: '조달 공고 분석부터 기술점수 대응까지 정리합니다.' },
+  { href: '/startup-business-plan', title: '창업지원 사업계획서', desc: '예비·초기창업패키지와 정부 창업지원사업 계획서를 구조화합니다.' },
+  { href: '/pre-startup-package-business-plan', title: '예비창업패키지', desc: '아이템, 고객 문제, 지원금 사용계획, 발표평가를 보강합니다.' },
+  { href: '/government-rnd-business-plan', title: '정부지원사업·R&D', desc: '기술개발 목표와 사업화 전략을 평가 기준에 맞춥니다.' },
+  { href: '/proposal-presentation-pt', title: '제안 발표 PT', desc: '발표자료 스토리라인과 예상 질의응답을 함께 설계합니다.' },
+  { href: '/service-planning-isp', title: '서비스 기획·ISP', desc: '요구사항 정의, 화면설계서, RFP, ISP를 실행 가능하게 정리합니다.' },
+  { href: '/system-integration-proposal', title: '시스템 구축 제안서', desc: 'SI 제안의 기술, 수행, 품질, 보안, 운영계획을 보강합니다.' },
+];
+
 function Services() {
   return (
     <section className="sec" id="services">
@@ -128,6 +140,32 @@ function Services() {
               <p className="svc-desc">{s.d}</p>
               <div className="svc-tags">{s.tags.map(t => <span key={t}>{t}</span>)}</div>
             </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SearchPages() {
+  return (
+    <section className="sec" id="search-pages">
+      <div className="page">
+        <div className="sec-head">
+          <div className="sec-head-left">
+            <div className="sec-kicker mono"><span className="dot"></span>SEARCH LANDING / SEO</div>
+            <h2 className="sec-title">검색 의도별로<br/><span className="low">바로 찾히는 페이지.</span></h2>
+          </div>
+          <p className="sec-desc">공공입찰, 나라장터, 창업지원사업, 발표평가처럼 고객이 실제로 검색하는 주제별 페이지를 따로 제공합니다.</p>
+        </div>
+        <div className="intent-grid">
+          {SEO_INTENTS.map(item => (
+            <a className="intent-card" href={item.href} key={item.href}>
+              <span className="mono dim">AMARANS SEO PAGE</span>
+              <strong>{item.title}</strong>
+              <p>{item.desc}</p>
+              <em>자세히 보기 →</em>
+            </a>
           ))}
         </div>
       </div>
@@ -555,6 +593,7 @@ function Footer() {
           <div className="foot-col">
             <span className="mono">SITEMAP</span>
             <a href="#services">서비스</a>
+            <a href="#search-pages">검색 페이지</a>
             <a href="#process">업무 프로세스</a>
             <a href="#care">케어 서비스</a>
             <a href="#team">팀.아마란스</a>
@@ -566,6 +605,13 @@ function Footer() {
             <a href="mailto:korea@amarans.co.kr">korea@amarans.co.kr</a>
             <a href="tel:01099407909">010-9940-7909</a>
             <span>경기도 광명시 소하로 190, 광명G타워 12층</span>
+          </div>
+          <div className="foot-col">
+            <span className="mono">SEO PAGES</span>
+            <a href="/public-procurement-proposal">공공입찰 제안서</a>
+            <a href="/startup-business-plan">창업지원 사업계획서</a>
+            <a href="/proposal-presentation-pt">제안 발표 PT</a>
+            <a href="/service-planning-isp">서비스 기획·ISP</a>
           </div>
           <div className="foot-col">
             <span className="mono">LEGAL</span>
@@ -741,6 +787,7 @@ function App() {
       <Nav />
       <Hero />
       <Services />
+      <SearchPages />
       <Process />
       <Care />
       <Team />

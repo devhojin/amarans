@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.amarans.co.kr/sitemap.xml
+Sitemap: https://www.amarans.co.kr/sitemap-google.xml
+Sitemap: https://www.amarans.co.kr/sitemap-naver.xml
